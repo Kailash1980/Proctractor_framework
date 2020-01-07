@@ -11,9 +11,6 @@ describe('login into sslt portal', function () {
         loginPage.clickSignIn();
         loginPage.clickLogut();
 
-    //var title = browser.getTitle();
-   // console.log(title);
-
     });
 
 });
