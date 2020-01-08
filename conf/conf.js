@@ -20,12 +20,17 @@ exports.config = {
     }
   },
 
+  suites: {
+    regression: ['../tests/example_spec.js','../tests/loginTest.js'],
+    smoke: ['../tests/example_spec.js','../tests/loginTest.js']
+  },
+
   // Framework to use. Jasmine is recommended.
   framework: 'jasmine',
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: ['../tests/loginTest.js'],
+  //specs: ['../tests/loginTest.js'],
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
