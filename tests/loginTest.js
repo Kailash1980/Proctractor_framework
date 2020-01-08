@@ -9,8 +9,8 @@ describe('login into sslt portal', function () {
         loginPage.enterFirstName(object.username);
         loginPage.enterPassword(object.password);
         loginPage.clickSignIn();
+        loginPage.verifyTitle();
         loginPage.clickLogut();
-
     });
 
 });
