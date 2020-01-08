@@ -5,6 +5,11 @@ let loginpage = function () {
     let login_button = element(by.css('.btn-primary')); 
     let log_out = element(by.xpath("//a[.='Log Off']"));
 
+
+    /*this.enterURL = function () {
+        browser.get("https//portal.ssat.org/Account/LogOn/");
+    }*/
+
     this.enterFirstName = function (enterUserName) {
         username_input.sendKeys(enterUserName);
     }

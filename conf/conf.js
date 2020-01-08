@@ -5,9 +5,9 @@ var reporter = new HtmlScreenshotReporter({
   dest: 'target/screenshots',
   filename: 'my-report.html'
 });
-var reporter = new HtmlScreenshotReporter({
+/*var reporter = new HtmlScreenshotReporter({
   captureOnlyFailedSpecs: true
-});
+});*/
 exports.config = {
   directConnect: true,
 
