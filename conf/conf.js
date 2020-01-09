@@ -1,5 +1,5 @@
 // An example configuration file.
-var HtmlScreenshotReporter = require('C:/Users/kailash.pathak/AppData/Roaming/npm/node_modules/protractor/node_modules/protractor-jasmine2-screenshot-reporter');
+var HtmlScreenshotReporter = require('C:/Users/kailash.pathak/AppData/Roaming/npm/node_modules/protractor-jasmine2-screenshot-reporter');
 
 var reporter = new HtmlScreenshotReporter({
   dest: 'target/screenshots',
@@ -9,24 +9,27 @@ var reporter = new HtmlScreenshotReporter({
   captureOnlyFailedSpecs: true
 });*/
 exports.config = {
+  // Framework to use. Jasmine is recommended.
+  framework: 'jasmine',
   directConnect: true,
 
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
     'browserName': 'chrome',
+    //'shardTestFiles': true,
+    //'maxInstances': 2,
 
     chromeOptions: {
-      args:['--headless']
+      args: ['--headless']
     }
   },
 
   suites: {
-    regression: ['../tests/example_spec.js','../tests/loginTest.js'],
-    smoke: ['../tests/example_spec.js','../tests/loginTest.js']
+    regression: ['../tests/example_spec.js', '../tests/loginTest.js'],
+    smoke: ['../tests/example_spec.js', '../tests/loginTest.js']
   },
 
-  // Framework to use. Jasmine is recommended.
-  framework: 'jasmine',
+
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
