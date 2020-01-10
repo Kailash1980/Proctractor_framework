@@ -25,12 +25,9 @@ exports.config = {
   },
 
   suites: {
-    regression: ['../tests/example_spec.js', '../tests/loginTest.js'],
-    smoke: ['../tests/example_spec.js', '../tests/loginTest.js']
+    regression: ['../tests/login_test.js']
+    //smoke: ['../tests/home/login_test.js']
   },
-
-
-
   // Spec patterns are relative to the current working directory when
   // protractor is called.
   //specs: ['../tests/loginTest.js'],
